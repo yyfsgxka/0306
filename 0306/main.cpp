@@ -49,24 +49,25 @@ int main()
 
 	}
 		//练习三
-	Mat dstMat = imread("C:\\Users\\YangYF\\Desktop\\0.png");
+	cv::Mat dstMat = imread("C:\\Users\\YangYF\\Desktop\\0.png");
+
 	cv::Point pt;
 	pt.x = 100;
 	pt.y = 100;
-	circle(dstMat, pt, 55, CV_RGB(255, 0, 0), 1, 8, 0);
+	circle(dstMat, pt, 5, CV_RGB(255, 0, 0), 1, 8, 0);
 	cv::Point pt1;
 	pt1.x = 10; pt1.y = 10;
-    cv:;Point pt2;
+	cv::Point pt2;
 	pt2.x = 20; pt2.y = 20;
 	line(dstMat, pt1, pt2, CV_RGB(255, 0, 0), 1, 8, 0);
 	cv::Rect rect;
 	rect.x = 10;
 	rect.y = 30;
-	rect.width=10;
-	rect.height=10;
+	rect.width = 10;
+	rect.height = 10;
 	rectangle(dstMat, rect, CV_RGB(255, 0, 0), 1, 8, 0);
 	imshow("dstMat", dstMat);
-	waitKey(10);
+	waitKey(0);
 	return 0;
 }
 
